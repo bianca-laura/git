@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git</title>
+</head>
+<body>
+    <h1> Curso de Git </h1>
+    <h3> Repositorio </h3>
+    <p> Repositorio é o projeto dentro do Git </p>
+
+    <h1>Configurando o Git</h1>
+    <h3>Criando usuario:</h3>
+    <p><strong>git config --global user.name "Bianca Laura"</strong></p>
+    <p>criando um email:</p>
+    <p><strong>git config --global user.email "biancalaura.rosa@gmail.com"</strong></p>
+    <p>informar qual editor esta usando</p>
+    <p><strong>git config --global core.editor vsCode</strong></p>
+
+    <h3> para resgatar as informações cadastrada usamos:</h3>
+    <p><strong>git config user.name </strong> <br /> para o nome</p>
+    <p><strong>git config user.email </strong> <br /> para o email</p>
+    <p>para resgatar todas as informações cadastradas usamos</p>
+    <strong>git config --list </strong>
+
+    <h3>Comandos basicos no cdm</h3>
+    <p>navegando entre pastas usamos o <strong>cd</strong></p>
+    <p>para voltar um diretorio usamos <strong> cd ../</strong></p>
+    <p>o comando para ver os arquivos q estão dentro da pasta usamos o comando <strong> dir </strong> ou <strong> tree /f </strong> ou o <strong>ls</strong></p>
+    <p>para criar uma pasta usamos <strong> mkdir nome-da-pasta</strong></p>
+
+    <h1>Criando repositorios</h1>
+    <p>para iniciar o repositorio damos o seguinte comando:</p>
+    <strong>git init </strong>
+    <p>para ver tudo oq foi alterado ou adicionado no projeto usamos:</p>
+    <strong>git status</strong>
+
+    <h1>Branch</h1>
+    <p>são verções diferentes do sistema</p>
+    <p>a versão principal seria master </p>
+    <h3>Comit</h3>
+    <p>comit seria uma alteração no sistema</p>
+    <p>para dar o commit usamos o comando</p>
+    <strong>git commit -m "Primeiro Commit"</strong>
+
+    <p>para adicionar os arquivos ao git usamos </p>
+    <strong>git add</strong> <p>para adicionar apenas um e </p>
+    <strong> git add -A </strong> <p>para adicinar todos</p>
+    <p>para ver oq foi modificado usamos <strong>git log</strong></p>
+    <p>para adicionar e comitar ao mesmo tempo vc coloca:</p>  
+    <strong> git -am "e o comentario sobre"</strong>
+    <p>para ver qual servidor estamos usamos o </p>
+    <strong> git branch </strong>
+
+    <p> para retornar a atulização anterior usamos:</p>
+    <strong>git reset --soft </strong>   <p>volta para as atualizações anterior do comite mas com os dados ainda existentes</p>
+    <strong>git reset- --mixerd </strong>   <p>volta a atualização anterior porem os arquivos ainda nao vao estar adiocnados no git</p>
+    <strong>git reset- --hard </strong>   <p> exclui tudo das atualização </p>
+
+    <h1> Criando outros branch </h1>
+    <p> para criarmos um novo servidor usamos</p>
+    <strong> git branch e o nome do novo branch</strong>
+    <p> para trocar de servidor usamos o</p>
+    <strong> git checkout e o nome do servidor</strong>
+    <p> para verificar as alterações antes de commitar se usa o comando : </p>
+    <strong> git diff </strong> 
+    <p> para saber somente o nome dos arquivos alterados usamos></p>
+    <strong>git diff --name-only</strong> 
+    <p> para saber oq foi alteração em um arquivo especifico </p>
+    <strong>git diff o nome do arquivo</strong>
+    <p> para desfazer as alterações usamos </p>
+    <strong>git checkout HEAD -- o nome do arquivo </strong>
+    <p> para adicionar o projeto no github primeiro criamos ele lá no site depois damos o seguinte comando:</p>
+    <strong> git remote add origin e o caminho q ele ira dar </strong>
+    <p>para verificar se foi criado damos o seguinte comando:</p>
+    <strong>git remote</strong>
+    <p>e depois damos o comando </p>]
+    <strong>git push -u origin qual o branch q era encaminhar</strong>
+
+
+
+
+    
+
+</body>
+</html>
